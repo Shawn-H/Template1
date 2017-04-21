@@ -1,0 +1,611 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    position: relative;
+}
+#loading {
+    background-color: white;
+    line-height: 100%;
+    text-align: center;
+    top:0px;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index:5;
+}
+/*Tope Menu*/
+#loading img{
+    margin: 20% auto;
+}
+header{
+    line-height: 30px;
+    background-color: white;
+    padding: 20px 10%;
+    width: 100%;
+    position: fixed;
+    top:0px;
+    z-index: 4;
+}
+header #title{
+    font-size: 20px;
+    font-weight: 600;
+    color:black;
+}
+header #TopMenu{
+    margin: 0px;
+    padding: 0px;
+    float:right;
+    display: block;
+}
+header #TopMenu>li{
+    display: inline-block;
+    margin-left: 20px;
+}
+header #TopMenu>li a{
+    display:block;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    color:black;
+}
+header #TopMenu>li .selected{
+    color:orangered;
+}
+header #TopMenu>li a:hover{
+    color:orangered;
+}
+header #TopMenu>li .currentPage{
+    color:orangered;
+}
+/*md-menu*/
+header >#md-menuBtn{
+    position: relative;
+    float:right;
+    cursor: pointer;
+    display: none;
+    z-index:3;
+}
+header >#md-menuBtn>span{
+    display: block;
+    margin-bottom: 6px;
+    border:1px solid black;
+    width: 24px;
+}
+header >#md-menuBtn>.toggleOn{
+    display: block;
+    margin-bottom: 6px;
+    border:1px solid white;
+    width: 24px;
+}
+header >#md-menuBtn:hover span{
+    animation: md-menu-hover 0.5s;
+    animation-fill-mode:forwards;
+}
+#right-menuUL{
+    margin: 30% 0px 0px 50px;
+    padding: 0px;
+    color:#ccc;
+}
+#right-menuUL li{
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+#right-menuUL>li a{
+    cursor: pointer;
+    display: block;
+    color:#ccc;
+    text-decoration: none;
+}
+@keyframes md-menu-hover{
+    from{}
+    to {
+        margin-bottom: 8px;
+    }
+}
+#right-menu{
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    display: none;
+    width: 40%;
+    top:0px;
+    right:0px;
+    z-index:2;
+}
+/*main*/
+main{
+    min-height: 100%;
+    position: relative;
+}
+/*Home*/
+#Home{
+    position: relative;
+    min-height: 600px;
+}
+#HomeSlider {
+    min-height: 600px;
+}
+#HomeSlider .HomeSliderImg{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/img_bg_1.jpg);
+    background-size: cover;
+    min-height: 600px;
+    width: 100%;
+    z-index: 1;
+}
+#Home .ctr{
+    font-size:30px;
+    width: 100%;
+    top:50%;
+    position: absolute;
+    color: white;
+    padding: 0px 50px;
+    cursor: pointer;
+    z-index: 3;
+}
+#HomeTitle{
+    top:40%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    color: white;
+    z-index: 3;
+}
+#HomeTitle  h1{
+    font-size:60px;
+}
+#HomeTitle  button{
+    padding:20px;
+    font-size:20px;
+    z-index: 3; 
+    border: none;
+    background-color: #FF5126;
+    color: white;
+}
+.mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+    overflow: hidden;
+}
+#Home .slider>li>.bgImg{
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+/*Services*/
+#Services{
+    width: 85%;
+    margin: 100px auto;
+}
+#Services .ServicesTitle h2{
+    font-weight: 600;
+    font-size: 34px;
+}
+#Services .ServicesTitle p{
+    font-size: 20px;
+    margin-bottom: 80px;
+}
+.ServicesInfo {
+    width:90%;
+    margin: 0px auto;
+    float:left;
+    min-height: 100px;
+}
+.ServicesInfo span{
+    color:#ccc;
+    font-size: 40px;
+    margin-right: 10px;
+    float:left;
+}
+.ServicesInfo div{
+    width:85%;
+    float:right;
+}
+.ServicesInfo div h3{
+    padding:0px;
+    margin: 0px;
+}
+.ServicesInfo div p{
+    font-size: 16px;
+    color:#666;
+}
+/*Portfolio*/
+#Portfolio{
+    margin: 200px auto;
+    min-height: 200%;
+    background: linear-gradient(170deg, white 1180px,#efefef 600px);
+    background: -webkit-linear-gradient(-80deg, white 1180px,#efefef 600px);
+    background: -o-linear-gradient(-80deg, white 1180px,#efefef 600px);
+    background: -moz-linear-gradient(-80deg, white 1180px,#efefef 600px);
+    background: -ms-linear-gradient(-80deg, white 1180px,#efefef 600px);
+}
+#Portfolio h1{
+    text-align: center;
+}
+#Portfolio p{
+    text-align: center;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    margin: 0px auto;
+    max-width: 730px;
+}
+#Portfolio #PortfolioPreview{
+    width: 85%;
+    margin: 80px auto;
+    overflow: hidden;
+}
+#Portfolio #PortfolioPreview .imgContainer{
+    padding: 10px;
+    min-height: 100%;
+}
+#Portfolio #PortfolioPreview .preview{
+    display: block;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+#Portfolio #PortfolioPreview .preview .mark{
+    color:white;
+    font-size:30px;
+    position: absolute;
+    top:48%;
+    width: 100%;
+    text-align: center;
+    background: none;
+    display: none;
+}
+#Portfolio #PortfolioPreview .preview img{
+/*    border-radius: 10px;*/
+    width:100%;
+}
+#questionGroup{
+    width:80%;
+    margin: 80px auto;
+}
+#QuestionTitle{
+    margin-top: 300px;
+}
+#QuestionTitle >h1{
+    font-weight: 600;
+}
+.QBox{margin-bottom: 20px;}
+.QBox .boxTitle{
+    background-color: white;
+    padding: 20px 30px;
+    margin: 0px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.QBox .boxTitleClick{
+    color:orange;
+}
+.QBox .boxTitleClick span{
+    color:black;
+    animation: sp 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes sp{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(45deg);}
+}
+.QBox .boxTitle span{
+    float:right;
+}
+.QBox .textBody{
+    background-color: white;
+    margin-top: 2px;
+    color:#888;
+    padding:20px;
+    font-size: 16px;
+    display: none;
+}
+/*Blog*/
+#Blog {
+    min-height: 300%;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(170deg, white 2000px,#efefef 600px);
+    background: -webkit-linear-gradient(-80deg, white 2000px,#efefef 600px);
+    background: -o-linear-gradient(-80deg, white 2000px,#efefef 600px);
+    background: -moz-linear-gradient(-80deg, white 2000px,#efefef 600px);
+    background: -ms-linear-gradient(-80deg, white 2000px,#efefef 600px);
+}
+#inner1 .inner1Title{
+    margin: 0px auto;
+    width: 55%;
+}
+#inner1 .inner1Title span{
+    font-size: 20px;
+}
+#inner1 .BlogList
+{
+    width:80%;
+    margin: 80px auto;
+}
+#inner1 .BlogList .inner1Box .imgContainer{
+    overflow: hidden;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+#inner1 .BlogList .inner1Box .mark{
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    color:white;
+    font-size: 30px;
+    position: absolute;
+    background: none;
+    top:40%;
+}
+#inner1 .BlogList .inner1Box .imgContainer>.mask,.mark{
+    display: none;
+}
+#inner1 .BlogList .inner1Box {
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 0px #ccc;
+    cursor: pointer;
+    margin: 30px auto;
+    background-color: white;
+}
+#inner1 .BlogList .inner1Box:hover{
+    box-shadow: 0px 0px 4px 1px #888;
+}
+#inner1 .BlogList .inner1Box .textBody{
+    text-align: left;
+    padding: 20px;
+}
+#inner1 .BlogList .inner1Box .textBody .textTitle{
+    font-size: 24px;
+    color:orangered;
+}
+#inner1 .BlogList .inner1Box .textBody .textPreview{
+    font-size: 16px;
+}
+#inner1 .BlogList .inner1Box .textBody .data{
+    color:#ccc;
+    font-size: 12px;
+}
+#inner1 .BlogList .inner1Box img{
+    width:100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+#Fun-Facts{
+    margin: 20px auto;
+}
+
+#Fun-Facts h1{
+    font-weight: 700;
+}
+#Fun-Facts p{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    width: 50%;
+    margin: 30px auto;
+}
+#Fun-FactList {
+    width: 80%;
+    margin: 30px auto;
+}
+#Fun-FactList div{
+    display: none;
+}
+#Fun-FactList .FFBox{
+    margin: 10px 5px;
+    background-color: white;
+    padding: 50px 0px;
+    box-shadow: 0px 0px 4px 0px #ccc;
+    display: none;
+}
+#Fun-FactList > div:nth-child(2){
+    -moz-animation-delay: 0.6s;
+    -ms-animation-delay: 0.6s;
+    -o-animation-delay: 0.6s;
+    -webkit-animation-delay: 0.6s;
+}
+#Fun-FactList > div:nth-child(3){
+    -moz-animation-delay: 0.8s;
+    -ms-animation-delay: 0.8s;
+    -o-animation-delay: 0.8s;
+    -webkit-animation-delay: 0.8s;
+}
+#Fun-FactList > div:nth-child(4){
+    -moz-animation-delay: 1s;
+    -ms-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+}
+#Fun-FactList .FFBox>p:nth-child(1){
+    font-size: 40px;
+    color:#CCC;
+}
+#Fun-FactList .FFBox>p:nth-child(2){
+    font-size: 50px;
+    margin-top: 30px;
+    color: orangered;
+}
+#Fun-FactList .FFBox>p:nth-child(3){
+    font-size: 16px;
+    color:#888;
+}
+#Products{
+    overflow: hidden;
+    position: relative;
+}
+#ProductsTitle{
+    margin: 100px auto;
+    max-width: 50%;
+}
+#ProductsTitle h1{
+    font-weight: 600;
+}
+#ProductsTitle p{
+    margin: 20px auto;
+    font-weight: 600;
+    font-size: 16px;
+}
+#Products #ProductsSlid{
+    width: 90%;
+    margin: 50px auto;
+}
+#Products #ProductsSlid img{
+    border-radius: 10px;
+}
+#Subscribe{
+    background-color: #FF5126;
+    color: black;
+    overflow: hidden;
+    padding :100px 0px;
+}
+#Subscribe h1{
+    font-weight: 500;
+}
+#Subscribe p{
+    font-size: 22px;
+    font-weight: 500;
+    margin: 40px auto 70px auto;
+    font-weight: 500;
+}
+#Subscribe form input{
+    border-radius:5px;
+    padding:10px 20px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: white;
+}
+#Subscribe form> input[type=text]{
+    border:2px solid rgba(255,255,255,0.2);
+}
+#Subscribe form> input[type=text]:focus{
+    border:2px solid white;
+}
+#Subscribe form> input[type=email]{
+    border:2px solid rgba(255,255,255,0.2);
+}
+#Subscribe form> input[type=email]:focus{
+    border:2px solid white;
+}
+#Subscribe form> input[type=submit]{
+    color:black;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: white;
+}
+#Contact{
+    position: relative;
+    overflow: hidden;
+    min-height:300px;
+    background:url(../images/img_bg_2.jpg) no-repeat top center;
+    background-size: cover;
+}
+#Contact h3{
+    padding: 0px;
+    margin: 20% auto;
+    color:white;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+footer{
+    width: 80%;
+    margin: 0px auto;
+    padding: 100px 0px;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+footer p{
+    width: 100%;
+    padding: 10px 10%;
+    float: right;
+}
+.Ficon a{
+    font-size: 16px;
+    color:orangered;
+    margin-left: 20px;
+}
+
+
+
+@media screen and (min-width:1200px){
+}
+/*中等屏幕设备*/
+@media screen and (min-width:992px) and (max-width:1200px){
+}
+/*一般手机设备*/
+@media screen and (min-width:768px) and (max-width:992px){
+    #HomeTitle  h1{
+        font-size:30px;
+    }
+    #Services{
+        width: 95%;
+    }
+    #Portfolio #PortfolioPreview{
+        width: 95%;
+    }
+    #questionGroup{
+        width:95%;
+    }
+    #inner1 .BlogList
+    {
+        width:95%;
+    }
+    #Fun-FactList {
+        width: 95%;
+    }
+    #Products #ProductsSlid{
+        width: 95%;
+    }
+    header >#md-menuBtn{
+        display: block!important;
+    }
+    header #TopMenu{
+        display: none!important;
+    }
+}
+/*超小屏幕设备*/
+@media screen and (max-width:768px){
+    #HomeTitle  h1{
+        font-size:30px;
+    }
+    #Services{
+        width: 95%;
+    }
+    #Portfolio #PortfolioPreview{
+        width: 95%;
+    }
+    #questionGroup{
+        width:95%;
+    }
+    #inner1 .BlogList
+    {
+        width:95%;
+    }
+    #Fun-FactList {
+        width: 95%;
+    }
+    #Products #ProductsSlid{
+        width: 95%;
+    }
+    header >#md-menuBtn{
+        display: block!important;
+    }
+    header #TopMenu{
+        display: none!important;
+    }
+}
+
+
