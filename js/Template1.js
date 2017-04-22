@@ -9,14 +9,14 @@
         T1.scrollTo($("#TopMenu>li>a"));
         T1.scrollTo($("#right-menuUL>li>a"));
         T1.period();
+        preview.css("height",Math.ceil($(".preview img").innerHeight()));
+        imgContainer.css("height",Math.ceil($("#inner1 .BlogList .inner1Box .imgContainer img").innerHeight()));
 
         $("#md-menuBtn").on("click",function(){
             $("#right-menu").animate({"width":"toggle"},function(){
             $("#md-menuBtn>span").toggleClass("toggleOn");})
         });
     //  Portfolio event
-        preview.css("height",Math.ceil($(".preview img").innerHeight()));
-        imgContainer.css("height",Math.ceil($("#inner1 .BlogList .inner1Box .imgContainer img").innerHeight()));
 
         preview.on("mouseenter",function(e){
             $(this).children(".mark").show(); 
@@ -55,6 +55,7 @@
             preview.css("height",$(".preview img").innerHeight());
             $(".inner1Box .imgContainer").css("height",$(".inner1Box .imgContainer img").innerHeight());
         });
+        
         $('#PortfolioPreview div').magnificPopup({
                 delegate :"a",
                 gallery:{
@@ -131,7 +132,7 @@
         this.period=function(){
             var p=setInterval(function(){
                 index+=1;
-                change(index)},4000);
+                change(index)},6000);
         }
         this.change=function(){
             if(index<0){
