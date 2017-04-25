@@ -107,7 +107,7 @@
         var titles=["Explore the new template.","Creative. Innovative.Intuitive.","A new experience."];
         var buttonText=["Follow @gettemplatesco","Get started","Get started"];
         var imgName=["images/img_bg_1.jpg","images/img_bg_2.jpg","images/img_bg_3.jpg"]
-        var index=0;
+        var index=1;
         this.getScrollTop=function(){
             return {
                 "totalScroll":Math.floor($(window).scrollTop()+$(window).innerHeight()),
@@ -138,12 +138,19 @@
             if(index<0){
                 index=2;
             }
-            else if(index>2){
-                index=0;
+            else if(index>3){
+                index=1;
             }
            $("#HomeTitle h1,button").fadeOut("fast",function(){
                $("#HomeSlider .mask").fadeOut("fast",function(){
-                   $("#HomeSlider .HomeSliderImg").css("background-image","url(../Template1/"+imgName[index]+")");
+                   $("#HomeSlider .HomeSliderImg").each(function(){
+                       if($(this).index()==index){
+                           $(this).css("display","block");
+                       }
+                       else{
+                           $(this).css("display","none");
+                       }
+                   })
                    $("#HomeSlider .mask").fadeIn();
                    $("#HomeTitle button").html(buttonText[index]).fadeIn();
                    $("#HomeTitle h1").html(titles[index]).fadeIn("slow");

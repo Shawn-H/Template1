@@ -128,9 +128,9 @@ main{
     min-height: 600px;
 }
 #HomeSlider .HomeSliderImg{
+    display: none;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../images/img_bg_1.jpg);
     background-size: cover;
     min-height: 600px;
     width: 100%;
