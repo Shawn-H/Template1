@@ -1,9 +1,10 @@
 html,body{
     margin: 0px;
     padding: 0px;
-    height: 100%;
+    min-height: 100%;
     position: relative;
 }
+
 #loading {
     background-color: white;
     line-height: 100%;
@@ -14,6 +15,11 @@ html,body{
     width: 100%;
     z-index:5;
 }
+.sidePadding{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 /*Tope Menu*/
 #loading img{
     margin: 20% auto;
@@ -21,7 +27,7 @@ html,body{
 header{
     line-height: 30px;
     background-color: white;
-    padding: 20px 10%;
+    padding: 20px 0px;
     width: 100%;
     position: fixed;
     top:0px;
@@ -180,7 +186,6 @@ main{
 }
 /*Services*/
 #Services{
-    width: 85%;
     margin: 100px auto;
 }
 #Services .ServicesTitle h2{
@@ -237,7 +242,6 @@ main{
     max-width: 730px;
 }
 #Portfolio #PortfolioPreview{
-    width: 85%;
     margin: 80px auto;
     overflow: hidden;
 }
@@ -269,7 +273,6 @@ main{
     width:100%;
 }
 #questionGroup{
-    width:80%;
     margin: 80px auto;
 }
 #QuestionTitle{
@@ -329,7 +332,6 @@ main{
 }
 #inner1 .BlogList
 {
-    width:80%;
     margin: 80px auto;
 }
 #inner1 .BlogList .inner1Box .imgContainer{
@@ -395,7 +397,6 @@ main{
     margin: 30px auto;
 }
 #Fun-FactList {
-    width: 80%;
     margin: 30px auto;
 }
 #Fun-FactList div{
@@ -440,7 +441,6 @@ main{
     color:#888;
 }
 #Products{
-    overflow: hidden;
     position: relative;
 }
 #ProductsTitle{
@@ -456,7 +456,6 @@ main{
     font-size: 16px;
 }
 #Products #ProductsSlid{
-    width: 90%;
     margin: 50px auto;
 }
 #Products #ProductsSlid img{
@@ -550,24 +549,9 @@ footer p{
     #HomeTitle  h1{
         font-size:30px;
     }
-    #Services{
-        width: 95%;
-    }
-    #Portfolio #PortfolioPreview{
-        width: 95%;
-    }
-    #questionGroup{
-        width:95%;
-    }
-    #inner1 .BlogList
-    {
-        width:95%;
-    }
-    #Fun-FactList {
-        width: 95%;
-    }
-    #Products #ProductsSlid{
-        width: 95%;
+    .sidePadding{
+        padding-left: 5%;
+        padding-right: 5%;
     }
     header >#md-menuBtn{
         display: block!important;
@@ -581,24 +565,9 @@ footer p{
     #HomeTitle  h1{
         font-size:30px;
     }
-    #Services{
-        width: 95%;
-    }
-    #Portfolio #PortfolioPreview{
-        width: 95%;
-    }
-    #questionGroup{
-        width:95%;
-    }
-    #inner1 .BlogList
-    {
-        width:95%;
-    }
-    #Fun-FactList {
-        width: 95%;
-    }
-    #Products #ProductsSlid{
-        width: 95%;
+    .sidePadding{
+        padding-left: 5%;
+        padding-right: 5%;
     }
     header >#md-menuBtn{
         display: block!important;
